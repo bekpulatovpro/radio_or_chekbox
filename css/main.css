@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 50px;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+.box__center {
+  width: 500px;
+  margin: 0 auto;
+}
+.dummy__label {
+  display: flex;
+  align-items: center;
+}
+h2{
+    color: #000;
+    font-size: 30px;
+}
+h4 {
+  margin-right: 30px;
+  color: #000;
+  font-size: 25px;
+}
+
+.dummy__input__tennis:checked + .dummy__controller {
+    display: inline-block;
+    background-image: url('../icons/table-tennis.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dummy__input__basketbol:checked + .dummy__controller {
+    display: inline-block;
+    background-image: url('../icons/basketball-ball.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dummy__input__voleybol:checked + .dummy__controller {
+    display: inline-block;
+    background-image: url('../icons/volleyball-ball.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dummy__input__hokkey:checked + .dummy__controller {
+    display: inline-block;
+    background-image: url('../icons/hockey-puck.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dummy__controller {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
